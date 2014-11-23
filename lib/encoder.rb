@@ -1,16 +1,16 @@
 class Encoder
 
-  attr_reader :pattern, :domain
+  attr_reader :format, :domain
   attr_accessor :email
 
-  def initialize(pattern, domain)
-    @pattern = pattern
+  def initialize(format, domain)
+    @format = format
     @domain = domain
   end
 
   def encode(name)
     fragments = name.downcase.split(' ')
-    case pattern
+    case format
       when :first_name_dot_last_name
         self.email = fragments.join('.') + "@#{domain}"
       when :first_name_dot_last_initial
@@ -20,7 +20,7 @@ class Encoder
       when :first_initial_dot_last_name
         self.email = fragments.first[0] + '.' + fragments.last + "@#{domain}"
       else
-        self.email = "Unavailable Pattern"
+        self.email = "Unavailable Email Format"
     end
   end
 
