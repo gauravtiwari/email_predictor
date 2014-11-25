@@ -14,7 +14,7 @@ module EmailPredictor
       # @return [lambda]
 
       def decode(email, full_name)
-        email_initial, self.email_domain = email.split('@')
+        email_initial, self.email_domain = email.downcase.split('@')
         self.name = full_name.downcase.split(' ')
         self.email_format = get_format(email_initial)
       end

@@ -281,47 +281,47 @@ a {
 <div class="results">
 <div id="div_group_1" class="example_group passed">
   <dl style="margin-left: 0px;">
-  <dt id="example_group_1" class="passed">EmailPredictor::Formatters::Decoder</dt>
+  <dt id="example_group_1" class="passed">EmailPredictor::Formatters::Encoder</dt>
   </dl>
 </div>
 <div id="div_group_2" class="example_group passed">
   <dl style="margin-left: 15px;">
-  <dt id="example_group_2" class="passed">I want to decode attributes from a given email</dt>
+  <dt id="example_group_2" class="passed">I want to encode an email addresses</dt>
     <script type="text/javascript">moveProgressBar('5.8');</script>
-    <dd class="example passed"><span class="passed_spec_name">should match to first_name.last_initial@domain.com email format</span><span class='duration'>0.00119s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">should match to f.l@domain.com email format</span><span class='duration'>0.00079s</span></dd>
     <script type="text/javascript">moveProgressBar('11.7');</script>
-    <dd class="example passed"><span class="passed_spec_name">should match to first_initial.last_initial@domain.com email format</span><span class='duration'>0.00013s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">should match to first.l@domain.com email format</span><span class='duration'>0.00012s</span></dd>
     <script type="text/javascript">moveProgressBar('17.6');</script>
-    <dd class="example passed"><span class="passed_spec_name">should match to first_initial.last_name@domain.com email format</span><span class='duration'>0.00007s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">should match to first.last@domain.com email format</span><span class='duration'>0.00011s</span></dd>
     <script type="text/javascript">moveProgressBar('23.5');</script>
-    <dd class="example passed"><span class="passed_spec_name">should match to no email format</span><span class='duration'>0.00006s</span></dd>
-    <script type="text/javascript">moveProgressBar('29.4');</script>
-    <dd class="example passed"><span class="passed_spec_name">should match to first_name.last_name@domain.com email format</span><span class='duration'>0.00011s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">should match to f.last@domain.com email format</span><span class='duration'>0.00007s</span></dd>
   </dl>
 </div>
 <div id="div_group_3" class="example_group passed">
-  <dl style="margin-left: 0px;">
-  <dt id="example_group_3" class="passed">EmailPredictor::Formatters::Encoder</dt>
+  <dl style="margin-left: 15px;">
+  <dt id="example_group_3" class="passed">I want to throw an error messages</dt>
+    <script type="text/javascript">moveProgressBar('29.4');</script>
+    <dd class="example passed"><span class="passed_spec_name">should match to no email format</span><span class='duration'>0.00113s</span></dd>
   </dl>
 </div>
 <div id="div_group_4" class="example_group passed">
-  <dl style="margin-left: 15px;">
-  <dt id="example_group_4" class="passed">I want to encode an email addresses</dt>
-    <script type="text/javascript">moveProgressBar('35.2');</script>
-    <dd class="example passed"><span class="passed_spec_name">should match to first.l@domain.com email format</span><span class='duration'>0.00007s</span></dd>
-    <script type="text/javascript">moveProgressBar('41.1');</script>
-    <dd class="example passed"><span class="passed_spec_name">should match to f.l@domain.com email format</span><span class='duration'>0.00009s</span></dd>
-    <script type="text/javascript">moveProgressBar('47.0');</script>
-    <dd class="example passed"><span class="passed_spec_name">should match to first.last@domain.com email format</span><span class='duration'>0.00006s</span></dd>
-    <script type="text/javascript">moveProgressBar('52.9');</script>
-    <dd class="example passed"><span class="passed_spec_name">should match to f.last@domain.com email format</span><span class='duration'>0.00006s</span></dd>
+  <dl style="margin-left: 0px;">
+  <dt id="example_group_4" class="passed">EmailPredictor::Formatters::Decoder</dt>
   </dl>
 </div>
 <div id="div_group_5" class="example_group passed">
   <dl style="margin-left: 15px;">
-  <dt id="example_group_5" class="passed">I want to throw an error messages</dt>
+  <dt id="example_group_5" class="passed">I want to decode attributes from a given email</dt>
+    <script type="text/javascript">moveProgressBar('35.2');</script>
+    <dd class="example passed"><span class="passed_spec_name">should match to first_initial.last_initial@domain.com email format</span><span class='duration'>0.00016s</span></dd>
+    <script type="text/javascript">moveProgressBar('41.1');</script>
+    <dd class="example passed"><span class="passed_spec_name">should match to first_name.last_initial@domain.com email format</span><span class='duration'>0.00010s</span></dd>
+    <script type="text/javascript">moveProgressBar('47.0');</script>
+    <dd class="example passed"><span class="passed_spec_name">should match to first_name.last_name@domain.com email format</span><span class='duration'>0.00013s</span></dd>
+    <script type="text/javascript">moveProgressBar('52.9');</script>
+    <dd class="example passed"><span class="passed_spec_name">should match to no email format</span><span class='duration'>0.00013s</span></dd>
     <script type="text/javascript">moveProgressBar('58.8');</script>
-    <dd class="example passed"><span class="passed_spec_name">should match to no email format</span><span class='duration'>0.00309s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">should match to first_initial.last_name@domain.com email format</span><span class='duration'>0.00010s</span></dd>
   </dl>
 </div>
 <div id="div_group_6" class="example_group passed">
@@ -333,13 +333,13 @@ a {
   <dl style="margin-left: 15px;">
   <dt id="example_group_7" class="passed">I want to predict email addresses for new formats</dt>
     <script type="text/javascript">moveProgressBar('64.7');</script>
-    <dd class="example passed"><span class="passed_spec_name">should predict correctly when a correct format is present (try 2)</span><span class='duration'>0.00052s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">should predict correctly when a correct format is present (try 2)</span><span class='duration'>0.00022s</span></dd>
     <script type="text/javascript">moveProgressBar('70.5');</script>
-    <dd class="example passed"><span class="passed_spec_name">should predict multiple formats for multiple patterns</span><span class='duration'>0.00046s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">should predict multiple formats for multiple patterns</span><span class='duration'>0.00020s</span></dd>
     <script type="text/javascript">moveProgressBar('76.4');</script>
-    <dd class="example passed"><span class="passed_spec_name">should predict correctly when a correct format is present</span><span class='duration'>0.00038s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">should predict correctly when a correct format is present</span><span class='duration'>0.00020s</span></dd>
     <script type="text/javascript">moveProgressBar('82.3');</script>
-    <dd class="example passed"><span class="passed_spec_name">should return no format</span><span class='duration'>0.00039s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">should return no format</span><span class='duration'>0.00018s</span></dd>
   </dl>
 </div>
 <div id="div_group_8" class="example_group passed">
@@ -351,19 +351,19 @@ a {
   <dl style="margin-left: 15px;">
   <dt id="example_group_9" class="passed">I have unique formats</dt>
     <script type="text/javascript">moveProgressBar('88.2');</script>
-    <dd class="example passed"><span class="passed_spec_name">should match to first_name_dot_last_name format</span><span class='duration'>0.00022s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">should match to first_name_dot_last_name format</span><span class='duration'>0.00018s</span></dd>
     <script type="text/javascript">moveProgressBar('94.1');</script>
-    <dd class="example passed"><span class="passed_spec_name">should match to first_initial_dot_last_initial format</span><span class='duration'>0.00021s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">should match to first_initial_dot_last_initial format</span><span class='duration'>0.00019s</span></dd>
   </dl>
 </div>
 <div id="div_group_10" class="example_group passed">
   <dl style="margin-left: 15px;">
   <dt id="example_group_10" class="passed">I have many email formats</dt>
     <script type="text/javascript">moveProgressBar('100.0');</script>
-    <dd class="example passed"><span class="passed_spec_name">should return all available formats</span><span class='duration'>0.00021s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">should return all available formats</span><span class='duration'>0.00020s</span></dd>
   </dl>
 </div>
-<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.01259 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.00745 seconds</strong>";</script>
 <script type="text/javascript">document.getElementById('totals').innerHTML = "17 examples, 0 failures";</script>
 </div>
 </div>
