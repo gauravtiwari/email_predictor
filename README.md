@@ -28,7 +28,7 @@ $ require './module.rb'
 Start a new predictor:
 
 ```
-base = Base.new(GIVEN_FORMATS)
+predictor = Base.new(GIVEN_FORMATS)
 ```
 You can seed as many formats as you want in Clients hash in the data/data.rb
 
