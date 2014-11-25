@@ -10,6 +10,10 @@ module EmailPredictor
         @domain = domain
       end
 
+      # Encodes email address from given name and domain.
+      # @param name
+      # @return [lambda]
+
       def encode(name)
         fragments = name.downcase.split(' ')
         raise 'This pattern is not a lambda' unless @email_format.lambda?

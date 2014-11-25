@@ -12,6 +12,9 @@ module EmailPredictor
       @decoder = decoder
     end
 
+    # Match formats
+    # @return [lambda]
+
     def decode_formats
       data.each do |name, email|
         decoder.decode(email, name)
