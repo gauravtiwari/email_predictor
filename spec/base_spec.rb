@@ -12,22 +12,22 @@ describe Base do
       expect(email_predictor.predict(name, domain).first).to eq "peter.wong@alphasights.com"
     end
 
-    it 'should predict correctly when a correct format is present (try 2)' do
-      name, domain = "Steve Wozniak", "apple.com"
-      email_predictor.context(CLIENTS)
-      expect(email_predictor.predict(name, domain).first).to eq "s.w@apple.com"
-    end
-
     it 'should predict multiple formats for multiple patterns' do
       name, domain = "Craig Silverstein", "google.com"
       email_predictor.context(CLIENTS)
       expect(email_predictor.predict(name, domain)).to eq ['craig.s@google.com', 'c.silverstein@google.com']
     end
 
+    it 'should predict correctly when a correct format is present (try 2)' do
+      name, domain = "Steve Wozniak", "apple.com"
+      email_predictor.context(CLIENTS)
+      expect(email_predictor.predict(name, domain).first).to eq "s.w@apple.com"
+    end
+
     it 'should return no format' do
       name, domain = "Barack Obama", "whitehouse.gov"
       email_predictor.context(CLIENTS)
-      expect(email_predictor.predict(name, domain)).to eq 'Can\'t predict email formats for this data'
+      expect(email_predictor.predict(name, domain)).to eq 'Can\'t predict email addresses for this data'
     end
 
   end

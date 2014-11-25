@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     coderay (1.1.0)
+    colorize (0.7.3)
     diff-lcs (1.2.5)
     method_source (0.8.2)
     pry (0.10.1)
@@ -21,10 +22,13 @@ GEM
       rspec-support (~> 3.1.0)
     rspec-support (3.1.2)
     slop (3.6.0)
+    yard (0.8.7.6)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  colorize
   pry
   rspec
+  yard

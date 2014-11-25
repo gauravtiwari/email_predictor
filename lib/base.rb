@@ -16,7 +16,7 @@ class Base
   # @return [Array]
 
   def predict(name, domain)
-    return 'Can\'t predict email formats for this data'  unless inspector.formats[domain]
+    return 'Can\'t predict email addresses for this data'  unless inspector.formats[domain]
     encoders = inspector.formats[domain].map {|p| EmailPredictor::Formatters::Encoder.new(p, domain) }
     encoders.map {|encoder| encoder.encode(name) }
   end

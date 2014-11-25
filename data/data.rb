@@ -5,6 +5,7 @@ CLIENTS = {
   "Larry Page" => "larry.p@google.com",
   "Sergey Brin" => "s.brin@google.com",
   "Steve Jobs" => "s.j@apple.com",
+  "Jony Ive" => "j.ive@apple.com",
   "Parul Singh" => "parul.s@yahoo.com",
   "Gaurav Tiwari" => "gaurav.t@yahoo.com",
   "John Doe" => "j.d@thoughtworks.com",

@@ -52,3 +52,4 @@ To run the specs:
 ```
 $ rspec
 ```
+The test results are available in HTML format in [rspec_results.html](rspec_results.html).
