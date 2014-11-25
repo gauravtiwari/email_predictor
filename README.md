@@ -18,7 +18,7 @@ Type below command to run the predictor, this will use data/data.rb dataset to o
 ```
 $ ruby predict.rb
 ```
-To add custom new clients open data/data.rb and modify CLIENTS hash to add data and add new test Patterns to TEST hash:
+To add custom new clients open data/data.rb and modify CLIENTS hash to add data and add new test clients/customers data to TEST hash:
 
 If you wish to use *irb*, please require the files using:
 
@@ -30,7 +30,7 @@ Start a new predictor:
 ```
 predictor = Base.new(GIVEN_FORMATS)
 ```
-You can seed as many formats as you want in Clients hash in the data/data.rb
+You can seed as many emails/name as you want in Clients hash in the data/data.rb
 
 Add the data to the base class:
 
