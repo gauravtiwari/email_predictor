@@ -10,7 +10,7 @@ module EmailPredictor
         @domain = domain
       end
 
-      # Encodes email address from given name and domain.
+      # Encodes email address from a given name and domain.
       # @param name
       # @return [lambda]
 
