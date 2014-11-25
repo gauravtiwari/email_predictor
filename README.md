@@ -35,7 +35,7 @@ You can seed as many emails/name as you want in Clients hash in the data/data.rb
 Add the data to the base class:
 
 ```
-base.context(CLIENTS)
+predictor.context(CLIENTS)
 ```
 Generate predictions:
 ```
