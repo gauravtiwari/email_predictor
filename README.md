@@ -1,18 +1,18 @@
 Email Predictor Ruby Program
 ===========================
 
-The requirements are outlined in [requirements.md](requirements.md).
+The requirements are outlined in [requirements.md](requirements.md). Please read.
 
-## Pre-requisites
+### Prerequisites
 Please make sure Git, ruby and rubygems are installed in your computer.
 
-## Download
+### Download
 From the Terminal (wherever you want to keep), run:
 
 ```
 $ git clone git@github.com:gauravtiwari/email_predictor.git && cd email_predictor/ && bundle
 ```
-## Usage
+### Usage
 Type below command to run the predictor, this will use data/data.rb dataset to output results:
 
 ```
@@ -41,13 +41,14 @@ Generate predictions:
 ```
 predictor.predict('John Doe','alphasights.com')
 predictor.predict('Sam Doe','google.com')
+predictor.predict('Jony Ive','apple.com')
 ```
 
 An array will be generated containing all the matched predictions.
 
 Checkout predict.rb for more details.
 
-## Testing
+### Testing
 To run the specs:
 ```
 $ rspec
