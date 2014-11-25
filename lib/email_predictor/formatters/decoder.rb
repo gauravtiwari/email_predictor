@@ -16,17 +16,9 @@ module EmailPredictor
       def decode(email, full_name)
         email_initial, self.email_domain = email.downcase.split('@')
         self.name = full_name.downcase.split(' ')
-        self.email_format = get_format(email_initial)
+        self.email_format = given_formats.select{ |f| f.call(name) == email_initial}
       end
-
-      # Select a matched format
-      # @param email_initial
-      # @return [lambda]
-
-      def get_format(email_initial)
-        given_formats.select{ |f| f.call(name) == email_initial}
-      end
-
+  
     end
   end
 end
