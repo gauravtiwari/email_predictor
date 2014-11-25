@@ -13,7 +13,7 @@ From the Terminal (wherever you want to keep), run:
 $ git clone git@github.com:gauravtiwari/email_predictor.git && cd email_predictor/ && bundle
 ```
 ## Usage
-Type below commands to run the predictor, this will use data/data.rb dataset to output results:
+Type below command to run the predictor, this will use data/data.rb dataset to output results:
 
 ```
 $ ruby predict.rb
@@ -23,7 +23,7 @@ To add custom new clients open data/data.rb and modify CLIENTS hash to add data 
 If you wish to use *irb*, please require the files using:
 
 ```
-$ require './require.rb'
+$ require './module.rb'
 ```
 Start a new predictor:
 
