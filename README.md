@@ -1,4 +1,4 @@
-Email Predictor Console Program
+Email Predictor Ruby Program
 ===========================
 
 The requirements are outlined in [requirements.md](requirements.md).
