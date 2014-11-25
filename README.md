@@ -1,4 +1,4 @@
-Email Predictor Console APP
+Email Predictor Console Program
 ===========================
 
 The requirements are outlined in [requirements.md](requirements.md).
