@@ -1,0 +1,5 @@
+require_relative './lib/base'
+require_relative './lib/email_predictor/formatters/encoder'
+require_relative './lib/email_predictor/formatters/decoder'
+require_relative './lib/email_predictor/inspector'
+require_relative './data/data.rb'
