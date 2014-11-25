@@ -3,7 +3,7 @@ Email Predictor Console APP
 
 The requirements are outlined in [requirements.md](requirements.md).
 
-## Prerequisites
+## Pre-requisites
 Please make sure Git, ruby and rubygems are installed in your computer.
 
 ## Download
@@ -11,7 +11,6 @@ From the Terminal (wherever you want to keep), run:
 
 ```
 $ git clone git@github.com:gauravtiwari/email_predictor.git && cd email_predictor/ && bundle
-
 ```
 ## Usage
 Type below commands to run the predictor, this will use data/data.rb dataset to output results:
@@ -44,7 +43,7 @@ predictor.predict('John Doe','alphasights.com')
 predictor.predict('Sam Doe','google.com')
 ```
 
-An array will be generated containing all matched predictions.
+An array will be generated containing all the matched predictions.
 
 Checkout predict.rb for more details.
 
